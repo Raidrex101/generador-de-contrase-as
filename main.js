@@ -27,12 +27,14 @@ function generar() {
     constraseña.value = contraseña
 
     if (tieneMayusculas(contraseña) && tieneEspeciales(contraseña) && tieneNumeros(contraseña)) { //condicioinales  para verificar si tiene al menos un caracter de cada tipo alert contraseña segura
-        mensaje.textContent = 'Contrasena segura';
+        mensaje.textContent = 'Contraseña segura';
         mensaje.style.color ='green';
+        mensaje.style.fontSize = '50px';
 
     } else {
-        mensaje.textContent = 'Contrasena no segura';
+        mensaje.textContent = 'Contraseña no segura';
         mensaje.style.color = 'red';
+        mensaje.style.fontSize = '50px';
     }
 }
 
